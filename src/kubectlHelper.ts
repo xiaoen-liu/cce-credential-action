@@ -26,7 +26,7 @@ export async function checkKubectlInstall(): Promise<boolean> {
         return false
     }
     core.info('kubectl already installed and set to path: ' + kubectlPath)
-    await utils.execCommand(`${kubectlPath} version`)
+    await utils.execCommand(`${kubectlPath} version --client`)
     return true
 }
 
