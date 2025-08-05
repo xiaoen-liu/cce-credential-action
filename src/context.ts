@@ -56,6 +56,7 @@ export function getInputs(): Inputs {
     return {
         ak: core.getInput('ak', {required: true}),
         sk: core.getInput('sk', {required: true}),
+        security_token: core.getInput('security_token', {required: false}),
         project_id: core.getInput('project_id', {required: true}),
         cluster_id: core.getInput('cluster_id', {required: true}),
         region: core.getInput('region', {required: true})
