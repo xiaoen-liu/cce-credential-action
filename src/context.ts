@@ -3,6 +3,7 @@ import * as core from '@actions/core'
 export interface Inputs {
     ak: string
     sk: string
+    security_token: string
     project_id: string
     cluster_id: string
     region: string
