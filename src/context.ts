@@ -10,6 +10,7 @@ export interface Inputs {
 }
 
 export const cceSupportRegions = [
+    'tr-west-1',
     'af-south-1',
     'cn-north-4',
     'cn-north-1',
