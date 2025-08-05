@@ -20,6 +20,8 @@ inputs:
   cluster_id: 
     required: true
     description: 'the ID of Huawei Cloud CCE cluster '
+  security_token: 
+    description: 'Huawei Cloud security_token'
 
 runs:
   using: 'node16'
