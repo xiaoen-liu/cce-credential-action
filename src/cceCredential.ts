@@ -68,6 +68,9 @@ export async function getCCECredential(inputs: context.Inputs) {
         .withAk(inputs.ak)
         .withSk(inputs.sk)
         .withProjectId(inputs.project_id)
+    if (inputs.security_token) {
+        credentials.withSecurityToken(inputs.security_token)
+    }
     const client = CceClient.newBuilder()
         .withCredential(credentials)
         .withEndpoint(endpoint)
